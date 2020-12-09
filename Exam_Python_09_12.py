@@ -12,9 +12,10 @@ proposition = (input("Choisir votre mot (6 lettres)"))
 def compare_mot (mot1,proposition):
     for i in range (len(proposition)):
         if proposition[i] == mot1[i]:
-            print(Back.RED + proposition[i])
-        else:
-            print(Back.YELLOW + proposition[i],)
+            print(Back.RED + proposition[i], end="")
+        if proposition[i] != mot1[i]:
+            print(Back.YELLOW + proposition[i], end="")
+      
     
         
 
