@@ -24,7 +24,7 @@ mot10=["g","i","t","h","u","b"]
 mot=""
 proposition=""
 
-
+# Charger un mot aléatoire :
 
 mot=random.randint(1,10)
 if (mot==1):
@@ -47,21 +47,53 @@ if (mot == 9):
     mot=mot9
 if (mot == 10):
     mot=mot10
-  
+
 print(mot)
 
 
+
+
+
 def compare_mot (mot, proposition):
+    print("")
     proposition = input("Votre proposition ? (6 lettres) : ")
-    for i in range (len(mot)):
+    for i in range (0,1):
         if proposition[0] == mot[0]:
             print(Back.RED + proposition[0], end="")
         if proposition[0] != mot[0]:
             print(Back.BLUE + proposition[0], end="")
       
-    
+        if proposition[1] == mot[1]:
+            print(Back.RED + proposition[1], end="")
+        if proposition[1] != mot[1]:
+            print(Back.BLUE + proposition[1], end="")
+            
+        if proposition[2] == mot[2]:
+            print(Back.RED + proposition[2], end="")
+        if proposition[2] != mot[2]:
+            print(Back.BLUE + proposition[2], end="")
+      
+        if proposition[3] == mot[3]:
+            print(Back.RED + proposition[3], end="")
+        if proposition[3] != mot[3]:
+            print(Back.BLUE + proposition[3], end="")
 
-compare_mot(mot, proposition)
+        if proposition[4] == mot[4]:
+            print(Back.RED + proposition[4], end="")
+        if proposition[4] != mot[4]:
+            print(Back.BLUE + proposition[4], end="")
+      
+        if proposition[5] == mot[5]:
+            print(Back.RED + proposition[5], end="")
+        if proposition[5] != mot[5]:
+            print(Back.BLUE + proposition[5], end="")
+            
+        print(Style.RESET_ALL)
+            
+
+
+while proposition != mot :            
+    compare_mot(mot, proposition)
 
    
 
