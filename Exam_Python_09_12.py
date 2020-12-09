@@ -12,47 +12,57 @@ print('back to normal now')
 
 mot1=["c","i","t","r","o","n"]
 mot2=["t","o","m","a","t","e"]
-mot3=["c","i","t","r","o","n"]
-mot4=["c","i","t","r","o","n"]
-mot5=["c","i","t","r","o","n"]
-mot6=["c","i","t","r","o","n"]
-mot7=["c","i","t","r","o","n"]
-mot8=["c","i","t","r","o","n"]
-mot9=["c","i","t","r","o","n"]
-mot10=["c","i","t","r","o","n"]
+mot3=["b","i","t","r","o","n"]
+mot4=["h","i","t","r","o","n"]
+mot5=["i","i","t","r","o","n"]
+mot6=["j","i","t","r","o","n"]
+mot7=["k","i","t","r","o","n"]
+mot8=["l","i","t","r","o","n"]
+mot9=["m","i","t","r","o","n"]
+mot10=["n","i","t","r","o","n"]
 
 mot=""
-
-def mot_aleatoire (mot):
-        mot=random.randint(1,10)
-        print(mot)
-        if (mot==1):
-            mot=mot1
-   
-    
+proposition=""
 
 
 
+mot=random.randint(1,10)
+if (mot==1):
+    mot=mot1
+if (mot == 2):
+    mot=mot2
+if (mot == 3):
+    mot=mot3
+if (mot == 4):
+    mot=mot4
+if (mot == 5):
+    mot=mot5
+if (mot == 6):
+    mot=mot6
+if (mot == 7):
+    mot=mot7
+if (mot == 8):
+    mot=mot8
+if (mot == 9):
+    mot=mot9
+if (mot == 10):
+    mot=mot10
+  
 
-
-mot_aleatoire(mot)
-
-
-
-def compare_mot (mot1,proposition):
+def compare_mot (mot, proposition):
+    proposition = input("Votre proposition ? (6 lettres) : ")
     for i in range (len(proposition)):
-        if proposition[i] == mot1[i]:
+        if proposition[i] == mo[i]:
             print(Back.RED + proposition[i], end="")
             print("félicitation vous avez gagné !")
-        if proposition[i] != mot1[i]:
+        if proposition[i] != mot[i]:
             print(Back.YELLOW + proposition[i], end="")
       
     
 
     
 
-
-
+print(mot)
 
 
 
