@@ -6,12 +6,20 @@ print(Style.RESET_ALL)
 print('back to normal now')
 
 
-mot1=["c","i","t","r","o","n"]
 
 
-def mot_desordre (mot1):
-    for i in range (len(mot1)):
-        print(mot1)
+def compare_mot (mot1, proposition):
+    if proposition[1] == mot1[1]:
+        print(Back.YELLOW + proposition[1])
+        
 
-mot_desordre(mot1)
+
+
+
+
+
+proposition = (input("Choisir votre mot (6 lettres)"))
+
+mot1=["c","i","t","r","o","n"]    
+
 input()
