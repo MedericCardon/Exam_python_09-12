@@ -12,14 +12,14 @@ print('back to normal now')
 
 mot1=["c","i","t","r","o","n"]
 mot2=["t","o","m","a","t","e"]
-mot3=["b","i","t","r","o","n"]
-mot4=["h","i","t","r","o","n"]
-mot5=["i","i","t","r","o","n"]
-mot6=["j","i","t","r","o","n"]
-mot7=["k","i","t","r","o","n"]
-mot8=["l","i","t","r","o","n"]
-mot9=["m","i","t","r","o","n"]
-mot10=["n","i","t","r","o","n"]
+mot3=["a","t","o","u","t","s"]
+mot4=["c","i","n","e","m","a"]
+mot5=["c","h","o","i","s","i"]
+mot6=["l","e","t","t","r","e"]
+mot7=["m","a","r","r","o","n"]
+mot8=["a","c","t","i","v","e"]
+mot9=["m","i","n","u","i","t"]
+mot10=["g","i","t","h","u","b"]
 
 mot=""
 proposition=""
@@ -48,23 +48,20 @@ if (mot == 9):
 if (mot == 10):
     mot=mot10
   
-
-def compare_mot (mot, proposition):
-    proposition = input("Votre proposition ? (6 lettres) : ")
-    for i in range (len(proposition)):
-        if proposition[i] == mo[i]:
-            print(Back.RED + proposition[i], end="")
-            print("félicitation vous avez gagné !")
-        if proposition[i] != mot[i]:
-            print(Back.YELLOW + proposition[i], end="")
-      
-    
-
-    
-
 print(mot)
 
 
+def compare_mot (mot, proposition):
+    proposition = input("Votre proposition ? (6 lettres) : ")
+    for i in range (len(mot)):
+        if proposition[0] == mot[0]:
+            print(Back.RED + proposition[0], end="")
+        if proposition[0] != mot[0]:
+            print(Back.BLUE + proposition[0], end="")
+      
+    
+
+compare_mot(mot, proposition)
 
    
 
