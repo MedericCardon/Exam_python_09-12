@@ -91,10 +91,16 @@ def compare_mot (mot, proposition):
         print(Style.RESET_ALL)
             
 
+def cherche_lettre (mot):
+    for i in range (0,1):
+        i = mot[2]
+        print(i)
+    return i    
+        
 
-while proposition != mot :            
-    compare_mot(mot, proposition)
+          
+cherche_lettre(mot)
 
-   
+compare_mot(mot, proposition)
 
 input()
