@@ -6,20 +6,25 @@ print(Style.RESET_ALL)
 print('back to normal now')
 
 
+mot1=["c","i","t","r","o","n"] 
+proposition = (input("Choisir votre mot (6 lettres)"))
 
-
-def compare_mot (mot1, proposition):
-    if proposition[1] == mot1[1]:
-        print(Back.YELLOW + proposition[1])
+def compare_mot (mot1,proposition):
+    for i in range (len(proposition)):
+        if proposition[i] == mot1[i]:
+            print(Back.RED + proposition[i])
+        else:
+            print(Back.YELLOW + proposition[i],)
+    
         
 
 
+compare_mot(mot1,proposition)
 
 
 
 
-proposition = (input("Choisir votre mot (6 lettres)"))
 
-mot1=["c","i","t","r","o","n"]    
+   
 
 input()
