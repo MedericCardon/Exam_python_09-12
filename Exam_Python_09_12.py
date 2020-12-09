@@ -21,9 +21,23 @@ mot8=["c","i","t","r","o","n"]
 mot9=["c","i","t","r","o","n"]
 mot10=["c","i","t","r","o","n"]
 
+mot=""
 
-proposition = random.(1,2,3,4,5,6,7,8,9,10)
-print(proposition)
+def mot_aleatoire (mot):
+        mot=random.randint(1,10)
+        print(mot)
+        if (mot==1):
+            mot=mot1
+   
+    
+
+
+
+
+
+mot_aleatoire(mot)
+
+
 
 def compare_mot (mot1,proposition):
     for i in range (len(proposition)):
